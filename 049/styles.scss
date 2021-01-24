@@ -2,6 +2,8 @@
 // edit the line if you wanna use other fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
+$green: rgb(40, 200, 80);
+
 /* // use only the available space inside the 400x400 frame */
 .frame {
     position: absolute;
@@ -22,6 +24,7 @@
 }
 
 .circle {
+    cursor: crosshair;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,9 +32,27 @@
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
-    background: rgb(40, 200, 80);
-    cursor: crosshair;
-
-    transition: all 0.25s linear;
+    background: $green;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
 }
 
+@keyframes pulse {
+    0% {
+		transform: scale(1);
+        box-shadow: 0 0 0 0 $green;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        box-shadow: 0 0 0 5px $green;
+        opacity: 0;
+        filter: blur(1px);
+    }
+}

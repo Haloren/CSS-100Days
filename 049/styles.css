@@ -22,6 +22,7 @@
 }
 
 .circle {
+  cursor: crosshair;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -31,8 +32,53 @@
   height: 1.5rem;
   border-radius: 50%;
   background: #28c850;
-  cursor: crosshair;
-  -webkit-transition: all 0.25s linear;
-  transition: all 0.25s linear;
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  -webkit-animation: pulse 2s infinite;
+          animation: pulse 2s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 #28c850;
+            box-shadow: 0 0 0 0 #28c850;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-box-shadow: 0 0 0 5px #28c850;
+            box-shadow: 0 0 0 5px #28c850;
+    opacity: 0;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 0 0 0 0 #28c850;
+            box-shadow: 0 0 0 0 #28c850;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    -webkit-box-shadow: 0 0 0 5px #28c850;
+            box-shadow: 0 0 0 5px #28c850;
+    opacity: 0;
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
