@@ -32,6 +32,8 @@
   height: 1.5rem;
   border-radius: 50%;
   background: #28c850;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .circle::after {

@@ -1,0 +1,61 @@
+/* // delete the following line if no text is used */
+/* // edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #fff;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.grid {
+  display: grid;
+  width: 400px;
+  height: 400px;
+  background: rgba(222, 71, 56, 1);
+  grid-template-columns: repeat(20, 20px);
+  grid-template-rows: repeat(20, 20px);
+}
+
+.orange-square {
+  width: 19px;
+  height: 19px;
+  border: 1px solid rgba(232, 81, 66, .8);
+  filter: blur(1px);
+}
+  .orange-square:hover {
+    cursor: pointer;
+    background: rgba(242, 91, 76, .8);
+  }
+
+.white-square {
+  width: 19px;
+  height: 19px;
+  border: 1px solid rgb(255, 255, 255);
+  filter: blur(0px);
+  background: rgb(255, 255, 255);
+}
+  .white-square:hover {
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+  }

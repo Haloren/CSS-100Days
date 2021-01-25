@@ -33,6 +33,8 @@ $green: rgb(40, 200, 80);
     height: 1.5rem;
     border-radius: 50%;
     background: $green;
+
+    transition: all 0.1s;
         &::after {
             content: "";
             position: absolute;
