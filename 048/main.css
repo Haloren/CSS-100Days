@@ -1,0 +1,97 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+/* 
+* {box-sizing: border-box;} */
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	/* box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1); */
+  overflow: hidden;
+  
+  z-index: -1px;
+  background: rgb(255,255,255);
+  background-image: url('./bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--blk);
+  opacity: .96;
+  box-shadow: 5px 5px 15px 5px rgb(255, 128, 128), 
+              -9px 5px 15px 5px rgb(255, 228, 136), 
+              -7px -5px 15px 5px rgb(140, 255, 133), 
+              12px -5px 15px 5px rgb(128, 199, 255), 
+              12px 10px 15px 7px rgb(228, 136, 255), 
+              -10px 10px 15px 7px rgb(255, 97, 107), 
+              -10px -7px 27px 1px rgb(142, 92, 255), 
+              -13px -13px 0px -1px rgba(0,0,0,0);
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 800px;
+}
+
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 5s ease-out;
+}
+.cube:hover {
+  cursor: crosshair;
+  transform: rotateX(360deg) rotateY(180deg) rotateZ(180deg);
+}
+
+.cube-side {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right,
+  rgb(255, 255, 255) 0%,
+  rgba(140, 92, 255, .8) 12%,
+  rgba(140, 199, 255, .8) 24%,
+  rgb(255, 255, 255) 50%,
+  rgba(140, 255, 133, .8) 62%,
+  rgba(255, 228, 136, .8) 74%,
+  rgba(255, 97, 107, .8) 100%);
+  border-image-slice: 1;
+}
+
+/* .green {
+  background: rgba(140, 255, 133, 0.6);
+  transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+} */
+.red {
+  background: rgba(255, 97, 107, 0.6);
+  transform: rotateX(165deg) rotateY(-50deg) translateZ(-50px);
+}
+.yellow {
+  background: rgba(255, 228, 136, 0.6);
+  transform: rotateX(165deg) rotateY(40deg) translateZ(-50px);
+}
+.blue {
+  background: rgba(140, 199, 255, 0.6);
+  transform: rotateX(165deg) rotateY(-50deg) translateZ(50px);
+}
+.violet {
+  background: rgba(140, 92, 255, 0.6);
+  transform: rotateX(165deg) rotateY(40deg) translateZ(50px);
+}
+/* .orange {
+  background: rgba(255, 158, 128, 0.6);
+  transform: rotateX(0deg) rotateY(0deg) translateZ(0px);
+} */
