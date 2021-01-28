@@ -1,0 +1,64 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+* {
+  font-family: 'Permanent Marker', cursive, sans-serif;
+}
+header {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+:root {
+  --white: rgb(236, 231, 238);
+  --black: rgb(3, 11, 56);
+  --blue: rgb(0, 111, 202);
+}
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: var(--white);
+  background: radial-gradient(circle, var(--blue) 20%, var(--black) 100%);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.time {
+    width: 200px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    text-shadow: 4px 3px var(--black);
+}
+#toggle, #reset {
+    margin: .5rem .2rem;
+    color: var(--blue);
+    border-color: var(--blue);
+    border-radius: 5px;
+    width: 45%;
+    float: left;
+    box-shadow: 2px 2px var(--black);
+}
+  #toggle:hover, #reset:hover {
+      color: var(--white);
+      background-color: var(--blue);
+      cursor: pointer;
+  }
