@@ -2,6 +2,7 @@
 # https://100dayscss.com/
 
 # CodePen Links:
+- 019 - 
 - 029 - https://codepen.io/haloren/pen/qBaGxWd
 - 047 - https://codepen.io/haloren/pen/qBazPxZ
 - 048 - https://codepen.io/haloren/pen/mdrNLev

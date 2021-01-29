@@ -1,6 +1,8 @@
-// starting ring is made of 18 dots & it expands out 10 rings
+// starting ring is made of 18 dots
+// rings expand by +6 dots (18, 24, 30, 36, 42, 48, 54, 60, 66, 72)
+// expands out to 10 rings
 let rings = 10;
-let dots = 18;
+let dots = [18, 24, 30, 36, 42, 48, 54, 60, 66, 72]
 
 let center = document.getElementById('center');
 
