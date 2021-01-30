@@ -1,0 +1,89 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+:root {
+  --yellow: rgb(255, 255, 0);
+  --silver: rgb(192, 192, 192);
+}
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 0px 0px 4px 8px rgba(255, 255, 0, 0.5);
+	overflow: hidden;
+  background: rgb(55,65,75);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.reflection {
+  position: absolute;
+  top: 130px;
+  left: 170px;
+  z-index: 10;
+  height: 40px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 01);
+  transform: rotate(45deg);
+}
+
+.bulb-top {
+  position: absolute;
+  top: 125px;
+  left: 147px;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: var(--yellow);
+}
+.bulb-right {
+
+}
+
+.bulb-left {
+
+}
+
+.bulb-bottom {
+  position: absolute;
+  top: 205px;
+  left: 170px;
+  height: 40px;
+  width: 60px;
+  background-color: var(--yellow);
+}
+
+.screw-thread {
+  position: absolute;
+  left: 167px;
+  height: 10px;
+  width: 65px;
+  border-radius: 10px;
+  background-color: var(--silver);
+}
+.screw-top {
+  top: 250px;
+}
+.screw-mid {
+  top: 265px;
+}
+
+.screw-bot {
+  position: absolute;
+  top: 280px;
+  left: 170px;
+  height: 20px;
+  width: 60px;
+  background-color: var(--silver);
+}
