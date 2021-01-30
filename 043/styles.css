@@ -5,6 +5,7 @@
 :root {
   --yellow: rgb(255, 255, 0);
   --silver: rgb(192, 192, 192);
+  --gray: rgb(55,65,75);
 }
 
 /* // use only the available space inside the 400x400 frame */
@@ -19,25 +20,35 @@
   border-radius: 2px;
 	box-shadow: 0px 0px 4px 8px rgba(255, 255, 0, 0.5);
 	overflow: hidden;
-  background: rgb(55,65,75);
+  background: var(--gray);
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.bulb-container, .color {
+  z-index: 5;
+  background-color: var(--yellow);
+  box-shadow: 0px -30px 100px 10px var(--yellow);
+}
+/* .bulb-container:hover, .color:hover {
+  cursor: pointer;
+  background-color: var(--silver);
+  box-shadow: none;
+} */
+
 .reflection {
   position: absolute;
-  top: 130px;
-  left: 170px;
+  top: 135px;
+  left: 165px;
   z-index: 10;
-  height: 40px;
+  height: 44px;
   width: 20px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 01);
-  transform: rotate(45deg);
+  transform: rotate(42deg);
 }
-
 .bulb-top {
   position: absolute;
   top: 125px;
@@ -45,30 +56,38 @@
   width: 105px;
   height: 105px;
   border-radius: 50%;
-  background-color: var(--yellow);
 }
 .bulb-right {
-
+  position: absolute;
+  top: 175px;
+  left: 220px;
+  width: 20px;
+  height: 70px;
+  border-radius: 10px;
+  transform: rotate(25deg);
 }
-
 .bulb-left {
-
+  position: absolute;
+  top: 175px;
+  left: 160px;
+  width: 20px;
+  height: 70px;
+  border-radius: 10px;
+  transform: rotate(-25deg);
 }
-
 .bulb-bottom {
   position: absolute;
   top: 205px;
   left: 170px;
   height: 40px;
   width: 60px;
-  background-color: var(--yellow);
 }
 
 .screw-thread {
   position: absolute;
-  left: 167px;
-  height: 10px;
-  width: 65px;
+  left: 169px;
+  height: 5px;
+  width: 62px;
   border-radius: 10px;
   background-color: var(--silver);
 }
@@ -76,14 +95,34 @@
   top: 250px;
 }
 .screw-mid {
-  top: 265px;
+  top: 260px;
 }
 
 .screw-bot {
   position: absolute;
-  top: 280px;
-  left: 170px;
-  height: 20px;
-  width: 60px;
+  top: 270px;
   background-color: var(--silver);
+}
+.bot-left {
+  left: 170px;
+  height: 0px;
+  width: 0px;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid var(--gray);
+  border-left: 10px solid var(--gray);
+  border-top: 10px solid transparent;
+}
+.bot-mid {
+  left: 190px;
+  height: 20px;
+  width: 20px;
+}
+.bot-right {
+  left: 210px;
+  height: 0px;
+  width: 0px;
+  border-right: 10px solid var(--gray);
+  border-bottom: 10px solid var(--gray);
+  border-left: 10px solid transparent;
+  border-top: 10px solid transparent;
 }
