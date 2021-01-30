@@ -6,6 +6,7 @@
   --yellow: rgb(255, 255, 0);
   --silver: rgb(192, 192, 192);
   --gray: rgb(55,65,75);
+  --off: rgb(134, 134, 128);
 }
 
 /* // use only the available space inside the 400x400 frame */
@@ -32,11 +33,6 @@
   background-color: var(--yellow);
   box-shadow: 0px -30px 100px 10px var(--yellow);
 }
-/* .bulb-container:hover, .color:hover {
-  cursor: pointer;
-  background-color: var(--silver);
-  box-shadow: none;
-} */
 
 .reflection {
   position: absolute;
