@@ -12,5 +12,7 @@
 - 051 - https://codepen.io/haloren/pen/abBoyxj
 - 052 - 
 
+- Bonus: Weather Icons - https://codepen.io/haloren/pen/xxRwQzm
+
 
 100 - CSS Challenge

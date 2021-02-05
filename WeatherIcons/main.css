@@ -1,0 +1,67 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(47, 31, 119);
+  color: antiquewhite;
+}
+
+.night {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #e7debf;
+  border-radius: 50%;
+}
+.day {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: #fffb06;
+  border-radius: 50%;
+}
+/* skipped condition "clear" use day or night icons */
+.clouds { 
+  
+}
+  .cloud-bottom {
+    height: 1rem;
+    width: 3rem;
+    border-radius: 100% 100% 50% 50%;
+    background: rgb(205, 206, 207);
+    box-shadow: 10px -10px rgb(116, 109, 121);
+  }
+  .cloud-left {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    background: rgb(205, 206, 207);
+    box-shadow: 10px -10px rgb(116, 109, 121);
+  }
+  .cloud-right {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+    background: rgb(205, 206, 207);
+    box-shadow: 10px -10px rgb(116, 109, 121);
+  }
+
+.drizzle {
+
+}
+.rain {
+
+}
+.thunderstorm {
+
+}
+.snow {
+
+}
+/* mist  */
+.default {
+
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
