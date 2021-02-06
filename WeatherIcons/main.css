@@ -78,12 +78,13 @@ body {
 
 }
 
-.rain, .lightning, .snow {
+.rain, .lightning {
   position: absolute;
   background-color: rgb(50, 35, 125);
   width: 3em;
   height: 3em;
   border-radius: 50%;
+  border: 1px solid;
   top: 60%;
   left: 40%;
 }
@@ -93,8 +94,18 @@ body {
 .lightning {
 
 }
+/* content='\2744' CSS Code for snowflake */
 .snow {
-
+  position: absolute;
+  color: rgb(255, 255, 255);
+  top: 30%;
+  left: 40%;
+  font-size: 2.5em;
+}
+.snow1 {
+  top: 40%;
+  left: 50%;
+  background-color: transparent;
 }
 
 /* DEFAULT/MIST */
