@@ -1,62 +1,57 @@
 * {
+  box-sizing: border-box;
   margin: 10px;
   padding: 10px;
   background-color: rgb(47, 31, 119);
   color: antiquewhite;
 }
 
-.night {
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
   height: 1.5rem;
-  width: 1.5rem;
-  background: #e7debf;
-  border-radius: 50%;
+  font-size: 1rem;
 }
-.day {
-  height: 1.5rem;
-  width: 1.5rem;
-  background: #fffb06;
-  border-radius: 50%;
-}
-/* skipped condition "clear" use day or night icons */
-.clouds { 
-  
-}
-  .cloud-bottom {
-    height: 1rem;
-    width: 3rem;
-    border-radius: 100% 100% 50% 50%;
-    background: rgb(205, 206, 207);
-    box-shadow: 10px -10px rgb(116, 109, 121);
-  }
-  .cloud-left {
-    height: 1rem;
-    width: 1rem;
-    border-radius: 100%;
-    background: rgb(205, 206, 207);
-    box-shadow: 10px -10px rgb(116, 109, 121);
-  }
-  .cloud-right {
-    height: 2rem;
-    width: 2rem;
-    border-radius: 100%;
-    background: rgb(205, 206, 207);
-    box-shadow: 10px -10px rgb(116, 109, 121);
-  }
 
-.drizzle {
+/* MIST */
+.default {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3rem;
+  height: 10px;
+}
+.line {
+  position: absolute;
+  width: 3rem;
+  height: 1rem;
+  background-color: rgb(120, 126, 136);
+  border-radius: .5rem;
+}
+
+/* ICON COMPONENTS */
+.sun {
 
 }
+
+.moon {
+
+}
+
+.cloud {
+
+}
+
 .rain {
 
 }
-.thunderstorm {
+
+.lightning {
 
 }
+
 .snow {
-
-}
-/* mist  */
-.default {
 
 }
 
