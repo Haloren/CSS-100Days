@@ -16,7 +16,6 @@ body {
   padding: 2em;
   margin: 0 auto;
 }
-
 .icon {
   position: relative;
   display: inline-block;
@@ -31,9 +30,9 @@ body {
   left: 50%;
   width: 2.5em;
   height: 2.5em;
-  background-color: rgb(220, 255, 110);
+  background: rgb(255,255,130);
+  background: radial-gradient(circle, rgba(255,255,130,1) 33%, rgba(255,155,0,1) 100%);
   border-radius: 50%;
-
 }
 .cresent {
   position: absolute;
@@ -53,9 +52,9 @@ body {
   width: 0.5em;
   height: 1em;
   margin-left: -0.2em;
-  background: rgb(220, 255, 110);
+  background: rgba(255,153,0,1);
   border-radius: 50%;
-  box-shadow: 0 5em rgb(220, 255, 110);
+  box-shadow: 0 5em rgba(255,153,0,1);
 }
 .rays:before,
 .rays:after {
@@ -67,9 +66,9 @@ body {
   height: 1em;
   transform: rotate(60deg);
   transform-origin: 50% 3em;
-  background: rgb(220, 255, 110);
+  background: rgba(255,153,0,1);
   border-radius: 50%;
-  box-shadow: 0 5em rgb(220, 255, 110);
+  box-shadow: 0 5em rgba(255,153,0,1);
 }
 .rays::before {
   transform: rotate(120deg);
@@ -103,4 +102,12 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+}
+
+.spin {
+  animation: spin 34s infinite linear;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
 }
