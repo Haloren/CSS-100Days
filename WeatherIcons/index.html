@@ -9,24 +9,60 @@
     </head>
 
     <header>Weather Icons</header>
-
-    <body>
-        <div class="icon day"></div>
-        <div class="icon night"></div>
-        <div class="icon cloud"></div>
+        <div class="icon day">
+            <h5>Day</h5>
+            <div class="circle">
+                <div class="rays"></div>
+            </div>
+        </div>
+        <div class="icon night">
+            <h5>Night</h5>
+            <div class="circle"></div>
+        </div>
+        <div class="icon clouds">
+            <h5>Clouds</h5>
+            <div class="cloud"></div>
+        </div>
         <!-- DRIZZLE DAY -->
-        <div class="icon day cloud rain"></div>
+        <div class="icon drizzle-day">
+            <h5>Drizzle Day</h5>
+            <div class="sun"></div>
+            <div class="cloud"></div>
+            <div class="rain"></div>
+        </div>
         <!-- DRIZZLE NIGHT -->
-        <div class="icon night cloud rain"></div>
+        <div class="icon drizzle-night">
+            <h5>Drizzle Night</h5>
+            <div class="night"></div>
+            <div class="cloud"></div>
+            <div class="rain"></div>
+        </div>
         <!-- RAIN -->
-        <div class="icon cloud rain"></div>
-        <div class="icon cloud lightning"></div>
-        <div class="icon cloud snow"></div>
+        <div class="icon rainy">
+            <h5>Rain</h5>
+            <div class="cloud"></div>
+            <div class="rain"></div>
+        </div>
+        <div class="icon thunderstorm">
+            <h5>Thunderstorm</h5>
+            <div class="cloud"></div>
+            <div class="lighting"></div>
+        </div>
+        <div class="icon cloud snow">
+            <h5>Snow</h5>
+            <div class="cloud"></div>
+            <div class="snow"></div>
+        </div>
+        <!-- DEFAULT/MIST -->
         <div class="icon default">
-            <div></div>
+            <h5>Mist</h5>
+            <div class="sun"></div>
+            <div class="default-border">
+                <div class="default-mid"></div>
+            </div>
         </div>
     </body>
     
-    <footer><h5> Used in React/Redux project Mostly Focused: https://github.com/Haloren/mostlyfocusedv2-frontend </h5></footer>
+    <footer> Used in React/Redux project Mostly Focused: https://github.com/Haloren/mostlyfocusedv2-frontend </footer>
 
 </html>
