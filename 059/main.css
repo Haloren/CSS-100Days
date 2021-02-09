@@ -55,24 +55,60 @@
 
 .moon {
   background: url("https://raw.githubusercontent.com/Haloren/CSS-100Days/main/059/Moon.png");
-  background-size: 96%;
-  background-repeat: no-repeat;
+  background-size: 98%;
   background-position: center;
-  transition: transform 4s;
+  background-repeat: no-repeat;
+  transition: transform 3s, opacity 2s;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
 }
+div:hover .moon {
+  transform: translateY(0);
+  opacity: 100%;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   height: 100%;
   width: 100%;
-
 }
-.down {
+.odd {
   transform: translateY(-25%);
 }
-.up {
+.even {
   transform: translateY(25%);
 }
-div:hover .down, div:hover .up {
-  transform: translateY(0);
+.col-1 {
+  grid-column: 1/2;
+  background-position: 0%;
+}
+.col-2 {
+  grid-column: 2/3;
+  background-position: 12.5%;
+}
+.col-3 {
+  grid-column: 3/4;
+  background-position: 25%;
+}
+.col-4 {
+  grid-column: 4/5;
+  background-position: 37.5%;
+}
+.col-5 {
+  grid-column: 5/6;
+  background-position: 50%;
+}
+.col-6 {
+  grid-column: 6/7;
+  background-position: 62.5%;
+}
+.col-7 {
+  grid-column: 7/8;
+  background-position: 75%;
+}
+.col-8 {
+  grid-column: 8/9;
+  background-position: 100%;
 }
