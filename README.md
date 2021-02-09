@@ -12,7 +12,7 @@
 - 051 - https://codepen.io/haloren/pen/abBoyxj
 - 052 - 
 - 059 - https://codepen.io/haloren/pen/eYBzLrr
-- 064 - 
+- 064 - https://codepen.io/haloren/pen/bGBwweV
 
 - Bonus: Weather Icons - https://codepen.io/haloren/pen/xxRwQzm
 
