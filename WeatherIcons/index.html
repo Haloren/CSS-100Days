@@ -24,7 +24,13 @@
         <div class="icon clouds">
             <h5>Clouds</h5>
             <!-- HTML Code for cloud &#x2601; or &#9729; -->
-            <div class="cloud">&#x2601;</div>
+            <!-- <div class="cloud">&#x2601;</div> -->
+            <svg class="cloud" id="cloud">
+                <circle r="1.5em" cx="7em" cy="4em" fill="#fff"></circle>
+                <circle r="2em" cx="9em" cy="3.5em" fill="#fff"></circle>
+                <circle r="2.5em" cx="11em" cy="3em" fill="#fff"></circle>
+                <rect x="7em" y="3.5em" width="4em" height="2em" fill="#fff"></rect>
+            </svg>
         </div>
         <!-- DRIZZLE DAY -->
         <div class="icon drizzle-day">
@@ -32,7 +38,9 @@
             <div class="circle spin">
                 <div class="rays"></div>
             </div>
-            <div class="cloud"></div>
+            <div class="cloud">
+                <use href="#cloud"></use>
+            </div>
             <div class="rain"></div>
         </div>
         <!-- DRIZZLE NIGHT -->
@@ -55,7 +63,6 @@
         </div>
         <div class="icon snowing">
             <h5>Snow</h5>
-            <div class="cloud"></div>
             <!-- &#10052; HTML CODE FOR SNOWFLAKE -->
             <div class="snow spin">&#10052;</div>
             <div class="snow snow1 spin">&#10052;</div>
