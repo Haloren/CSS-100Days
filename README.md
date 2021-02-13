@@ -4,7 +4,7 @@
 # CodePen Links:
 - 019 - 
 - 029 - https://codepen.io/haloren/pen/qBaGxWd
-- 040 - 
+- 040 - https://codepen.io/haloren/pen/QWGdGdp
 - 043 - https://codepen.io/haloren/pen/bGBGmBp
 - 047 - https://codepen.io/haloren/pen/qBazPxZ
 - 048 - https://codepen.io/haloren/pen/mdrNLev
