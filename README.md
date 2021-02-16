@@ -16,7 +16,7 @@
 - 059 - https://codepen.io/haloren/pen/eYBzLrr
 - 061 - https://codepen.io/haloren/pen/oNYYqRo
 - 064 - https://codepen.io/haloren/pen/bGBwweV
-- 070 - 
+- 070 - https://codepen.io/haloren/pen/jOVmrmY
 
 - Side Quest: Weather Icons - https://codepen.io/haloren/pen/xxRwQzm
 
