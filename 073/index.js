@@ -31,7 +31,17 @@ planetCard = () => {
     center.appendChild(img)
 }
 
-newIndex = 0
+indexCounter = () => {
+    let indexCount = 0;
+    setInterval(() => {
+        indexCount++;
+        console.log(indexCount)
+        if(indexCount >= 8)  { indexCount = -1; }
+    }, 4000)
+}
+
+newIndex = () => Math.floor(Math.random() * Math.floor(8))
+
 changePlanet = (newIndex) => {
     let title = document.getElementById('planetTitle')
     let image = document.getElementById('planetImage')
