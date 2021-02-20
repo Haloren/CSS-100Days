@@ -12,21 +12,33 @@ const planets = [
     ['Pluto', 'https://raw.githubusercontent.com/Haloren/CSS-100Days/main/073/images/Pluto.jpg']
 ]
 
-renderPlanetCard = () => {
-    let title = planets[5][0]
-    let image = planets[5][1]
+planetCard = () => {
+    let title = planets[0][0]
+    let image = planets[0][1]
 
     let h1 = document.createElement('h1');
     h1.setAttribute('class', 'planetTitle')
+    h1.setAttribute('id', 'planetTitle')
     h1.innerHTML = title
 
     let img = document.createElement('img');
     img.setAttribute('class', 'planetImage')
+    img.setAttribute('id', 'planetImage')
     img.src = image
-    img.alt = 'Planet ' + title
+    img.alt = 'Planet '+ title
 
     center.appendChild(h1)
     center.appendChild(img)
 }
 
-renderPlanetCard();
+newIndex = 0
+changePlanet = (newIndex) => {
+    let title = document.getElementById('planetTitle')
+    let image = document.getElementById('planetImage')
+
+    title.innerHTML = planets[newIndex][0]
+    image.src = planets[newIndex][1]
+    image.alt = 'Planet '+ planets[newIndex][0]
+}
+
+planetCard();

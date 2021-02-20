@@ -20,6 +20,7 @@
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  box-shadow: 0 0 100px rgb(245, 255, 150);
 }
 
 .center {
@@ -27,7 +28,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  border-radius: 8000px;
 }
 
 .planetTitle {
@@ -47,7 +47,7 @@
 }
 
 .fade {
-  animation: fade 3s ease-in-out;
+  animation: fade 2s ease-in-out;
 }
 @keyframes fade {
   from {opacity: 0}
