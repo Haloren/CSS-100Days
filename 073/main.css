@@ -15,6 +15,7 @@
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
   background: rgb(0, 0, 0);
+  background-image: url("https://raw.githubusercontent.com/Haloren/CSS-100Days/main/073/images/stars.jpg");
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -27,14 +28,28 @@
   left: 50%;
   transform: translate(-50%,-50%);
   border-radius: 8000px;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-shadow: 2px 2px rgb(135, 135, 135);
 }
 
-img {
-  border-radius: 10px;
+.planetTitle {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.planetImage {
+  border-radius: 10px 50%;
   width: 300px;
   height: 300px;
   object-fit: cover;
+}
+
+.fade {
+  animation: fade 3s ease-in-out;
+}
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
 }

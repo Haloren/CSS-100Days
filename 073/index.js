@@ -13,13 +13,17 @@ const planets = [
 ]
 
 renderPlanetCard = () => {
+    let title = planets[5][0]
+    let image = planets[5][1]
+
     let h1 = document.createElement('h1');
-    h1.setAttribute('id', 'planetName')
-    h1.innerHTML = planets[2][0]
+    h1.setAttribute('class', 'planetTitle')
+    h1.innerHTML = title
 
     let img = document.createElement('img');
-    img.setAttribute('id', 'planetImage')
-    img.src = planets[2][1]
+    img.setAttribute('class', 'planetImage')
+    img.src = image
+    img.alt = 'Planet ' + title
 
     center.appendChild(h1)
     center.appendChild(img)
