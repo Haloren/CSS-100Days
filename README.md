@@ -19,7 +19,10 @@
 - 070 - https://codepen.io/haloren/pen/jOVmrmY
 - 073 - 
 
-- Side Quest: Weather Icons - https://codepen.io/haloren/pen/xxRwQzm
+# Side Quest
+- Weather Icons - https://codepen.io/haloren/pen/xxRwQzm
+- Random Planet - https://codepen.io/haloren/pen/ExNvXGd
+
 
 
 100 - CSS Challenge
