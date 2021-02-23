@@ -18,6 +18,7 @@
 - 064 - https://codepen.io/haloren/pen/bGBwweV
 - 070 - https://codepen.io/haloren/pen/jOVmrmY
 - 073 - https://codepen.io/haloren/pen/ExNvXGd (Random Planet)
+- 074 - 
 - 076 - 
 
 # Side Quest
