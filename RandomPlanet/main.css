@@ -28,6 +28,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: opacity 3s;
 }
 
 .planetTitle {
@@ -36,7 +38,6 @@
   color: rgb(255, 255, 255);
   text-align: center;
   text-shadow: 0 0 10px rgb(255, 255, 255);
-  animation: glow 2s ease-in-out infinite alternate;
 }
 
 .planetImage {

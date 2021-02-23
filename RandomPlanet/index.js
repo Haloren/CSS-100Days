@@ -29,6 +29,7 @@ planetCard = () => {
 
     center.appendChild(h1)
     center.appendChild(img)
+    center.style.opacity = '1'
 }
 
 indexCounter = () => {
@@ -36,7 +37,7 @@ indexCounter = () => {
     setInterval(() => {
         indexCount++;
         console.log(indexCount)
-        if(indexCount >= 8)  { indexCount = -1; }
+        if(indexCount >= 9)  { indexCount = -1; }
         changePlanet(indexCount)
     }, 4000)
 }
@@ -48,6 +49,8 @@ changePlanet = (newIndex) => {
     title.innerHTML = planets[newIndex][0]
     image.src = planets[newIndex][1]
     image.alt = 'Planet '+ planets[newIndex][0]
+
+    center.style.opacity === '0' ? center.style.opacity = '1' : center.style.opacity = '0'
 }
 
 planetCard();
