@@ -14,13 +14,11 @@
   border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: rgb(0, 0, 0);
-  background-image: url("https://raw.githubusercontent.com/Haloren/CSS-100Days/main/RandomPlanet/images/stars.jpg");
+  background: rgb(55, 75, 95);
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  box-shadow: 0 0 100px rgb(245, 255, 150);
 }
 
 .center {
@@ -28,4 +26,36 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  display: flex;
+}
+
+.input-password {
+  text-align: center;
+  font-size: 1.3rem;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px 0 25px 0;
+  border: none;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, .3);
+}
+.input-password:focus {
+  outline: none;
+}
+
+.password-label {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.password-show {
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 1px rgba(0, 0, 0, .3);
 }
