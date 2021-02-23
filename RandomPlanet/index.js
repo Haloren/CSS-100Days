@@ -37,10 +37,9 @@ indexCounter = () => {
         indexCount++;
         console.log(indexCount)
         if(indexCount >= 8)  { indexCount = -1; }
+        changePlanet(indexCount)
     }, 4000)
 }
-
-newIndex = () => Math.floor(Math.random() * Math.floor(8))
 
 changePlanet = (newIndex) => {
     let title = document.getElementById('planetTitle')
@@ -52,3 +51,4 @@ changePlanet = (newIndex) => {
 }
 
 planetCard();
+indexCounter();

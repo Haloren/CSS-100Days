@@ -29,3 +29,19 @@
   left: 50%;
   transform: translate(-50%,-50%);
 }
+
+.planetTitle {
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.planetImage {
+  border-radius: 10px 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
