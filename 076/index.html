@@ -14,9 +14,9 @@
     <body>
         <div class="frame">
             <div class="center">
-                <input type="password" id="input-password" class="input-password" placeholder='Enter "password"'></input>
-                <label class="password-label"> Password </label>
-                <input type="checkbox" class="password-show" onClick='showPassword()'4></input>
+                <input type="password" id="input-password" class="input-password" onFocus='showLabel()' onBlur='blurLabel()' placeholder='Enter "password"'></input>
+                <label id="password-label" class="password-label"> Password </label>
+                <input type="checkbox" class="password-show" onClick='showPassword()'></input>
             </div>
         </div>
     </body>
