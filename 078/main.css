@@ -1,0 +1,50 @@
+/* delete the following line if no text is used */
+/* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 5px rgba(0,0,0,0.33);
+	overflow: hidden;
+  background: rgb(50, 150, 220);
+  background: radial-gradient(circle, rgba(50,150,220,1) 33%, rgba(255,255,255,1) 100%);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+button {
+    text-transform: uppercase;
+    background: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px;
+    height: 66px;
+    border: none;
+
+    transition: .5s all;
+}
+button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 4px 8px 16px 5px rgba(0,0,0,0.33);
+}
+button:focus {outline: 0}
