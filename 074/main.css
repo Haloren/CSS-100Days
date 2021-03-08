@@ -15,7 +15,6 @@
 	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
   background: rgb(25, 200, 150);
-  color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -38,8 +37,21 @@
   font-size: 1.2rem;
   text-align: center;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin: 5px;
   padding: 5px;
+  outline: none;
+  cursor: pointer;
+
+  transition: all .66s ease-out;
+}
+.circle:hover {
+  background: rgb(25, 175, 125);
+}
+
+.selected {
+  background: rgb(255, 255, 255);
+  color: rgb(25, 200, 150);
+  pointer-events: none;
 }
