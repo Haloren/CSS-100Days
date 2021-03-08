@@ -12,10 +12,9 @@
   margin-top: -200px;
   margin-left: -200px;
   border-radius: 2px;
-	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 	overflow: hidden;
-  background: rgb(0, 0, 0);
-  background-image: url("https://raw.githubusercontent.com/Haloren/CSS-100Days/main/RandomPlanet/images/stars.jpg");
+  background: rgb(25, 200, 150);
   color: #333;
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -27,4 +26,20 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  white-space: nowrap;
+}
+
+.circle {  
+  display: inline-block;
+  background: rgb(25, 200, 150);
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  padding: 5px;
 }

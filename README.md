@@ -20,7 +20,9 @@
 - 073 - https://codepen.io/haloren/pen/ExNvXGd (Random Planet)
 - 074 - 
 - 076 - https://codepen.io/haloren/pen/XWNzoQy
+- 077 - 
 - 078 - https://codepen.io/haloren/pen/LYbJBRB
+- 082 - 
 
 # Side Quest
 - Weather Icons - https://codepen.io/haloren/pen/xxRwQzm
