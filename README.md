@@ -22,7 +22,7 @@
 - 076 - https://codepen.io/haloren/pen/XWNzoQy
 - 077 - 
 - 078 - https://codepen.io/haloren/pen/LYbJBRB
-- 082 - 
+- 082 - https://codepen.io/haloren/pen/LYbXrjN
 
 # Side Quest
 - Weather Icons - https://codepen.io/haloren/pen/xxRwQzm
