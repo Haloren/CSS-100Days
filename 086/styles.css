@@ -1,0 +1,53 @@
+/* // delete the following line if no text is used
+// edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.25);
+	overflow: hidden;
+  background: rgb(50, 75, 95);
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cradle {
+  width: 200px;
+  height: 10px;
+  border: solid rgba(255, 255, 255, .4);
+  border-width: 1px 0px 1px 0px;
+  border-radius: 10px;
+  background: linear-gradient(0deg, rgba(255,255,255,.5) 0%, rgba(221,221,221,1) 50%, rgba(0,0,0,.5) 100%);
+}
+
+.ball {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 60px 10px, rgb(221,221,221), rgb(60, 60, 70));
+}
+.ball:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(221,221,221,1) 50%, rgba(0,0,0,.5) 100%);
+}
