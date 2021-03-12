@@ -54,14 +54,19 @@
     top: -100px;
     width: 1px;
     height: 100px;
-    background: linear-gradient(0deg, rgba(240, 120, 120, 0.5) 0%, rgba(255, 255, 75, 0.75) 50%, rgba(240, 120, 120, 0.75) 100%);
+    background: linear-gradient(0deg, rgb(240, 120, 120) 0%, rgba(255, 255, 75, 0.75) 50%, rgb(240, 120, 120) 100%);
   }
 
 .ball-1 {
   left: 20px;
   top: 100px;
-  transform-origin: top;
-  animation: swing-left 1s ease-out infinite alternate;
+  transform-origin: 50% -100px;
+  animation: swing-left 2s infinite alternate;
+}
+@keyframes swing-left {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(0deg);}
+  100% {transform: rotate(45deg);}
 }
 .ball-2 {
   left: 60px;
@@ -78,13 +83,11 @@
 .ball-5 {
   left: 180px;
   top: -60px;
-  animation: swing 2s ease-out infinite alternate;
+  transform-origin: 50% -100px;
+  animation: swing-right 2s infinite alternate;
+  animation-delay: 2s;
 }
-.ball-5::before {
-  
-}
-
-@keyframes swing {
+@keyframes swing-right {
   0% {transform: rotate(0deg);}
   50% {transform: rotate(0deg);}
   100% {transform: rotate(-45deg);}
