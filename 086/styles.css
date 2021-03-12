@@ -29,25 +29,63 @@
 }
 
 .cradle {
-  width: 200px;
+  width: 240px;
   height: 10px;
   border: solid rgba(255, 255, 255, .4);
   border-width: 1px 0px 1px 0px;
   border-radius: 10px;
-  background: linear-gradient(0deg, rgba(255,255,255,.5) 0%, rgba(221,221,221,1) 50%, rgba(0,0,0,.5) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 75, 0.75) 0%, rgba(221,221,221,1) 50%, rgba(240, 120, 120, 0.5) 100%);
 }
 
 .ball {
+  display: flex;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: radial-gradient(circle at 60px 10px, rgb(221,221,221), rgb(60, 60, 70));
+  background: radial-gradient(circle at 60px 10px, rgb(219, 129, 241), rgb(60, 60, 70));
+  position: relative;
 }
 .ball:before {
     content: "";
     display: block;
     position: absolute;
+    left: 50%;
+    top: -100px;
     width: 1px;
     height: 100px;
-    background: linear-gradient(0deg, rgba(0,0,0,.5) 0%, rgba(221,221,221,1) 50%, rgba(0,0,0,.5) 100%);
+    background: linear-gradient(0deg, rgba(240, 120, 120, 0.5) 0%, rgba(255, 255, 75, 0.75) 50%, rgba(240, 120, 120, 0.75) 100%);
+  }
+
+.ball-1 {
+  left: 20px;
+  top: 100px;
+  transform-origin: top;
+  animation: swing-left 1s ease-out infinite alternate;
+}
+.ball-2 {
+  left: 60px;
+  top: 60px;
+}
+.ball-3 {
+  left: 100px;
+  top: 20px;
+}
+.ball-4 {
+  left: 140px;
+  top: -20px;
+}
+.ball-5 {
+  left: 180px;
+  top: -60px;
+  animation: swing 2s ease-out infinite alternate;
+}
+.ball-5::before {
+  
+}
+
+@keyframes swing {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(0deg);}
+  100% {transform: rotate(-45deg);}
 }
