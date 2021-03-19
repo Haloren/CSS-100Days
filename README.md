@@ -20,7 +20,7 @@
 - 073 - https://codepen.io/haloren/pen/ExNvXGd (Random Planet)
 - 074 - https://codepen.io/haloren/pen/PobyPWr
 - 076 - https://codepen.io/haloren/pen/XWNzoQy
-- 077 - 
+- 077 - https://codepen.io/haloren/pen/gOLNeYY
 - 078 - https://codepen.io/haloren/pen/LYbJBRB
 - 082 - https://codepen.io/haloren/pen/LYbXrjN
 - 086 - https://codepen.io/haloren/pen/JjbxpbV
