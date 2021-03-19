@@ -60,7 +60,7 @@
 .ball-1 {
   left: 20px;
   top: 100px;
-  transform-origin: 50% -100px;
+  transform-origin: center -100px;
   animation: swing-left 2s infinite alternate;
 }
 @keyframes swing-left {
@@ -83,7 +83,7 @@
 .ball-5 {
   left: 180px;
   top: -60px;
-  transform-origin: 50% -100px;
+  transform-origin: center -100px;
   animation: swing-right 2s infinite alternate;
   animation-delay: 2s;
 }
