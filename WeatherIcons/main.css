@@ -27,9 +27,10 @@ body {
 }
 
 .circle {
+  z-index: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 40%;
   width: 2.5em;
   height: 2.5em;
   background: rgb(255,255,130);
@@ -39,7 +40,7 @@ body {
 .cresent {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 30%;
   display: block;
   width: 2em;
   height: 2em;
@@ -77,24 +78,37 @@ body {
 }
 
 .cloud {
-  background-color: transparent;
-}
-
-.rain, .lightning {
+  z-index: 1;
+  background: transparent;
   position: absolute;
-  background-color: rgb(50, 35, 125);
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  border: 1px solid;
-  top: 60%;
-  left: 40%;
+  top: 30%;
+  left: 35%;
+  color: rgb(255, 255, 255);
+  font-size: 7rem;
 }
+
 .rain {
-
+  background: transparent;
+  z-index: 2;
+  position: absolute;
+  top: 85%;
+  left: 45%;
+  animation: blink 3s linear infinite;
 }
-.lightning {
+.rain::before {
+  content: '\01F4A7';
+  animation: blink 2s linear infinite;
+}
+.rain::after {
+  content: '\01F4A7';
+  animation: blink 4s linear infinite;
+}
+@keyframes blink {
+  50% {opacity: 60%;}
+}
 
+.lightning {
+  
 }
 /* content='\2744' CSS Code for snowflake */
 .snow {
@@ -114,7 +128,7 @@ body {
 .mist {
   position: absolute;
   top: 55%;
-  left: 35%;
+  left: 30%;
 }
 .mist:before {
   content: '';
