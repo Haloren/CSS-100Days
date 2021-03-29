@@ -29,7 +29,7 @@ body {
 .circle {
   z-index: 0;
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 40%;
   width: 2.5em;
   height: 2.5em;
@@ -81,35 +81,44 @@ body {
   z-index: 1;
   background: transparent;
   position: absolute;
-  top: 30%;
-  left: 35%;
+  top: 10%;
+  left: 34%;
   color: rgb(255, 255, 255);
-  font-size: 7rem;
+  font-size: 7.5rem;
 }
 
 .rain {
   background: transparent;
   z-index: 2;
   position: absolute;
-  top: 85%;
+  top: 70%;
   left: 45%;
   animation: blink 3s linear infinite;
+  font-size: 1.25rem;
 }
 .rain::before {
   content: '\01F4A7';
-  animation: blink 2s linear infinite;
+  animation: blink 2s ease-in-out infinite;
 }
 .rain::after {
   content: '\01F4A7';
-  animation: blink 4s linear infinite;
+  animation: blink 4s ease-in-out infinite;
 }
 @keyframes blink {
-  50% {opacity: 60%;}
+  50% {opacity: 70%;}
 }
 
 .lightning {
-  
+  background: transparent;
+  z-index: 2;
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  font-size: 4rem;
+  color: rgb(255,153,0);
+  text-shadow: 0px 4px 5px rgb(255,255,130);
 }
+
 /* content='\2744' CSS Code for snowflake */
 .snow {
   position: absolute;
@@ -127,7 +136,7 @@ body {
 /* DEFAULT/MIST */
 .mist {
   position: absolute;
-  top: 55%;
+  top: 35%;
   left: 30%;
 }
 .mist:before {
@@ -159,6 +168,7 @@ body {
 }
 
 footer {
+  z-index: 99;
   position: fixed;
   bottom: 0;
   left: 0;
