@@ -5,7 +5,7 @@
 <!-- ###-CSS Challenge -->
 - 012 -
 - 026 - 
-- 032 - 
+- 032 - https://codepen.io/haloren/pen/mdRQxYO
 - 029 - https://codepen.io/haloren/pen/qBaGxWd
 - 040 - https://codepen.io/haloren/pen/QWGdGdp
 - 043 - https://codepen.io/haloren/pen/bGBGmBp
