@@ -12,7 +12,7 @@
   border-radius: 2px;
 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 	overflow: hidden;
-  background: rgb(0,0,0);
+  background:  rgb(200, 215, 225);
   color: rgb(255, 255, 255);
 	font-family: 'Open Sans', Helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -24,4 +24,33 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+
+.card {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 150px;
+  width: 250px;
+}
+.number-container {
+  position: absolute;
+  top: 22px;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background: rgb(90, 105, 115);
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(50, 175, 255);
+  color: rgb(255, 255, 255);
 }

@@ -4,21 +4,20 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>026</title>
+        <title>032</title>
         <link rel="stylesheet" href="styles.css">
         <script defer type="text/javascript" src="index.js"></script>
     </head>
 
-    <header>#026 CSS-100 Days</header>
+    <header>#032 CSS-100 Days</header>
 
     <body>
         <div class="frame">
             <div class="center">
-                <div class="card" id="card">
-                    <div class="number-container">1</div>
-                    <h1 class="title" id="title"></h1>
-                    <p class="quote" id="quote"></p>
-                    <button class="btn">OK</button>
+                <div class="counter-container">
+                    <button class="minus" onclick="countDown()"> &#8722; </button>
+                    <div class="count" id="count"> 0 </div>
+                    <button class="plus" onclick="countUp()"> &#x2B; </button>
                 </div>
             </div>
         </div>

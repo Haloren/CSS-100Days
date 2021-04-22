@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+/* // use only the available space inside the 400x400 frame */
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: rgb(209,90,42);
+  background: linear-gradient(45deg, rgba(209,90,42,1) 0%, rgba(252,174,57,1) 100%);
+  color: rgb(136, 136, 136);
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.counter-container {
+  display: grid;
+  grid-template-columns: 60px 40px 60px;
+  height: 60px;
+  width: 160px;
+  background-color: rgb(240, 255, 255);
+  border-radius: 60px;
+}
+.count {
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  font-size: 1.66rem;
+  opacity: 1;
+}
+
+.minus {
+  background-color: rgb(240, 255, 255);
+  color: rgb(182, 0, 0);
+  border: 1px solid rgb(255, 235, 225);
+  border-radius: 50%;
+  outline: none;
+  font-size: 2em;
+  margin: .2em;
+}
+  .minus:hover {
+    cursor: pointer;
+    color: rgb(240, 255, 255);
+    background-color: rgb(182, 0, 0);
+    border: 1px solid rgb(182, 0, 0);
+  } 
+.plus {
+  background-color: rgb(240, 255, 255);
+  color: rgb(145, 210, 115);
+  border: 1px solid rgb(255, 235, 225);
+  border-radius: 50%;
+  outline: none;
+  font-size: 2em;
+  margin: .2em;
+}
+.plus:hover {
+  cursor: pointer;
+  color: rgb(240, 255, 255);
+  background-color: #91d273;
+  border: 1px solid rgb(145, 210, 115);
+}
