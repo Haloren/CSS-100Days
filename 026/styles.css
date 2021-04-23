@@ -27,25 +27,42 @@
 }
 
 .card {
+  position: relative;
   background: rgb(255, 255, 255);
   border-radius: 5px;
-  height: 150px;
-  width: 250px;
+  width: 14em;
+  height: 9em;
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
 }
-.number-container {
+.card::before, .card::after {
+  content: '';
   position: absolute;
-  top: 22px;
+  top: 0;
   right: 0;
-  width: 50px;
-  height: 50px;
-  background: rgb(90, 105, 115);
-  text-align: center;
+  border-color: transparent;
+  border-style: solid;
+}
+.card::before {
+  border-width: 1.25em;
+  border-right-color: rgb(130, 145, 165);
+  border-top-color: rgb(130, 145, 165);
+  border-top-right-radius: 5px;
+}
+
+.pg-number {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: .2em .5em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: .9rem;
 }
 
 .btn {
   position: absolute;
   bottom: 0px;
-  height: 40px;
+  height: 25%;
   width: 100%;
   overflow: hidden;
   border: none;
@@ -53,4 +70,7 @@
   cursor: pointer;
   background: rgb(50, 175, 255);
   color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
