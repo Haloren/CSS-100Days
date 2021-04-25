@@ -18,14 +18,12 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-
 .card {
   position: relative;
   background: rgb(255, 255, 255);
@@ -48,8 +46,7 @@
   border-top-color: rgb(130, 145, 165);
   border-top-right-radius: 5px;
 }
-
-.pg-number {
+.card-number {
   position: absolute;
   top: 0;
   right: 0;
@@ -58,7 +55,26 @@
   font-weight: bold;
   font-size: .9rem;
 }
-
+.quote-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+.title {
+  color: rgb(130, 145, 165);
+  font-size: .9rem;
+  text-align: center;
+  margin: 10% 0 0 0;
+  padding: 0;
+  font-weight: bold;
+}
+.quote {
+  color: rgba(130, 145, 165, .8);
+  font-size: .7rem;
+  text-align: center;
+  margin: 5% 10% 10% 10%;
+  padding: 0;
+}
 .btn {
   position: absolute;
   bottom: 0px;
@@ -73,4 +89,12 @@
   text-transform: uppercase;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.switch {
+  animation: switch 1s;
+}
+@keyframes switch {
+  from {transform: scale(0.75);}
+  to {transform: scale(1);}
 }

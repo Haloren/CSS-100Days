@@ -13,13 +13,15 @@
 
     <body>
         <div class="frame">
-            <div class="center">
+            <div class="center" id="center">
                 <div class="card" id="card">
                     <div class="triangle"></div>
-                    <div class="pg-number" id="pg-number"></div>
-                    <h1 class="title" id="title"></h1>
-                    <p class="quote" id="quote"></p>
-                    <button class="btn" onclick="addContent(1)">ok</button>
+                    <div class="card-number" id="card-number"></div>
+                    <div class="quote-container">
+                        <h1 class="title" id="title"></h1>
+                        <p class="quote" id="quote"></p>
+                    </div>
+                    <button class="btn" onclick="createQuote(getIndex())">ok</button>
                 </div>
             </div>
         </div>
