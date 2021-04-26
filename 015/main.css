@@ -1,92 +1,102 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+ /* delete the following line if no text is used */
+ /* edit the line if you wanna use other fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
 
-.title {
-  font-size: 1.2rem;
-  font-family: sans-serif, serif, 'Courier New', Courier;
-  font-weight: lighter;
-  text-align: center;
-  padding: 15px;
-  color: rgba(0, 0, 0, .5);
-}
-
+ /* use only the available space inside the 400x400 frame */
 .frame {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 400px;
-    height: 400px;
-    margin-top: -200px;
-    margin-left: -200px;
-    border-radius: 2px;
-      /* box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1); */
-    box-shadow: inset 8px 8px 8px rgba(0,0,0,0.1);
-    overflow: hidden;
-    background: linear-gradient(45deg, rgb(60, 145, 175) 0%, rgb(90, 160, 90) 100%);
-  }
-  .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 250px;
-    width: 300px;
-    border: 2px solid white;
-    border-radius: 5px;
-    background: white;
-  }
-  
-  .cloud-box {
-    position: absolute;
-    top: 55px;
-    left: 70px;
-    transform: translate(-50%,-50%);
-    color: rgba(0, 0, 0, .25);
-    width: 100px;
-    font-size: 3.5rem;
-    text-align: center;
-    border: 1px dashed rgba(0, 0, 0, .5);
-    transform: scaleX(-1);
-    margin: 30px;
-  }
-  .arrow-top {
-    position: absolute;
-    top: 52%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 0; 
-    height: 0; 
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid rgb(255, 255, 255);
-  }
-  .arrow-bottom {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%,-50%); 
-    border: 3px solid rgb(255, 255, 255);
-    background: rgb(255, 255, 255);
-  }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: linear-gradient(45deg, rgb(60, 145, 175) 0%, rgb(90, 160, 90) 100%);
+  color: #333;
+	font-family: 'Arial', 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  width: 300px;
+  height: 250px;
 
-  .button {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    color: white;
-    font-size: 1rem;
-    background: rgb(110, 205, 60);
-    width: 140px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 2px 0px rgb(110, 110, 110);
-    outline: none;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: 20% 50% 30%;
+}
+.title {
+  grid-column: 1/4;
+  grid-row: 1/1;
+  border-bottom: 1px solid rgba(0, 0, 0, .25);
+  align-self: center;
+  text-align: center;
+  padding: 5%;
+  font: 1rem normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, .6);
+}
+.cloud-box {
+  grid-column: 2/2;
+  grid-row: 2/2;
+  border: 1px dashed rgba(0, 0, 0, .33);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, .25);
+  font-size: 3.5rem;
+  width: 50%;
+  height: 75px;
+  margin: auto;
+  transform: scale(-1, 1); /*Flip HTML cloud*/
+  align-self: center;
+  text-align: center;
+}
+.arrow-top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 7px 8px 7px;
+  border-color: transparent transparent rgb(255, 255, 255) transparent;
+}
+.arrow-bottom {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: rgb(255, 255, 255);
+  height: 9px;
+  width: 6px;
+}
+.btn {
+  grid-column: 2/2;
+  grid-row: 3/3;
+  background: rgb(110, 205, 60);
+  color: rgba(255,255,255,0.8);
+  font-size: .9rem;
+  width: 140px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px rgb(110, 110, 110);
+  outline: none;
+  width: 80%;
+  margin: 0 0 5% 10%;
+  align-self: center;
   }
-  .button:hover {
+  .btn:hover {
     cursor: pointer;
-    box-shadow: 0px 2px 0px rgb(110, 110, 110), 0px 4px 10px rgb(110, 205, 60);
+    box-shadow: 0px 2px 0px rgb(110, 110, 110), 0px 4px 20px rgb(110, 205, 60);
   }
