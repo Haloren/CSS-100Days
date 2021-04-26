@@ -4,7 +4,7 @@
 # CodePen Links:
 <!-- ###-CSS Challenge -->
 - 012 -
-- 026 - 
+- 026 - https://codepen.io/haloren/pen/PoWVvgx
 - 032 - https://codepen.io/haloren/pen/mdRQxYO
 - 029 - https://codepen.io/haloren/pen/qBaGxWd
 - 040 - https://codepen.io/haloren/pen/QWGdGdp

@@ -94,7 +94,7 @@
 }
 
 .switch {
-  animation: switch 1.5s ease-out;
+  animation: switch 1.1s ease-out;
 }
 @keyframes switch {
   from {
