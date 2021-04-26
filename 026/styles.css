@@ -31,6 +31,8 @@
   width: 14em;
   height: 9em;
   box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+
+  transition: .5s ease-out;
 }
 .card::before, .card::after {
   content: '';
@@ -92,9 +94,15 @@
 }
 
 .switch {
-  animation: switch 1s;
+  animation: switch 1.5s ease-out;
 }
 @keyframes switch {
-  from {transform: scale(0.75);}
-  to {transform: scale(1);}
+  from {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
