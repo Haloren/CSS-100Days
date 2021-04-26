@@ -47,6 +47,10 @@
   color: rgba(0, 0, 0, .6);
 }
 .cloud-box {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%,-50%);
   grid-column: 2/2;
   grid-row: 2/2;
   border: 1px dashed rgba(0, 0, 0, .33);
@@ -54,7 +58,6 @@
   color: rgba(0, 0, 0, .25);
   font-size: 3.5rem;
   width: 50%;
-  height: 75px;
   margin: auto;
   transform: scale(-1, 1); /*Flip HTML cloud*/
   align-self: center;
@@ -77,7 +80,7 @@
   left: 50%;
   transform: translate(-50%,-50%);
   background: rgb(255, 255, 255);
-  height: 9px;
+  height: 15px;
   width: 6px;
 }
 .btn {
