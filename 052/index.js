@@ -1,25 +1,17 @@
 // starting ring is made of 18 dots
 // rings expand by +6 dots (18, 24, 30, 36, 42, 48, 54, 60, 66, 72)
 // expands out to 10 rings
-let rings = 10;
-let dots = [18, 24, 30, 36, 42, 48, 54, 60, 66, 72]
+const rings = 10;
 
-let center = document.getElementById('center');
+const viewBox = document.getElementById('view-box');
 
 let r;
 for (r = 1; r <= rings; r++ ){
-    let ring = document.createElement('div');
-    ring.id = 'ring'
-    ring.className = 'ring ring' + r;
+    let ring = document.createElement('circle');
+    ring.classList = 'ring-'+ r
+    ring.setAttribute('cx', 150);
+    ring.setAttribute('cy', 150);
+    ring.setAttribute('r', 40+(r*10));
 
-    // let d;
-    // for(d = 1; d <= dots; d++){
-    // let dot = document.createElement('div');
-    // dot.className = 'dot dot' + d;
-
-    center.append(ring)
+    viewBox.append(ring)
 }
-
-// let makeRing = () => {
-//     let numberDots = 
-// }
