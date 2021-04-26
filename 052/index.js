@@ -19,3 +19,7 @@ for (r = 1; r <= rings; r++ ){
 
     center.append(ring)
 }
+
+// let makeRing = () => {
+//     let numberDots = 
+// }
