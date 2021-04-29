@@ -39,11 +39,15 @@ button {
   width: 180px;
   text-align: center;
 
-  transition: 1s ease-out;
+  background-image: linear-gradient(rgb(85, 157, 227), rgb(85, 157, 227));
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  transition: background-size .8s;
 }
 button:hover {
-  background: rgb(75, 145, 215);
   cursor: pointer;
+  background-size: 100% 100%;
 }
 
 .right {
@@ -52,13 +56,12 @@ button:hover {
   right: 0;
   width: 2px;
   height: 0;
-  background: rgb(255,255,255);
-  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
-  animation: first 2s linear;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgb(235, 255, 125) 100%);
+  animation: first .1s ease-in-out;
 }
 @keyframes first {
-  25% {height: 100%;};
-  75% {height: 0;}
+  100% {height: 101%;};
 }
 .bottom {
   position: absolute;
@@ -67,14 +70,13 @@ button:hover {
   width: 0;
   height: 2px;
   background: rgb(255,255,255);
-  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgb(235, 255, 125) 100%);
 
-  animation: second 3s linear;
-  animation-delay: .5s;
+  animation: second .2s ease-in-out;
+  animation-delay: .1s;
 }
 @keyframes second {
-  25% {width: 100%};
-  75% {width: 0};
+  100% {width: 101%};
 }
 .left {
   position: absolute;
@@ -83,14 +85,13 @@ button:hover {
   width: 2px;
   height: 0;
   background: rgb(255,255,255);
-  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgb(235, 255, 125) 100%);
 
-  animation: third 2s linear;
-  animation-delay: 1.25s;
+  animation: third .1s ease-in-out;
+  animation-delay: .3s;
 }
 @keyframes third {
-  25% {height: 100%};
-  75% {height: 0};
+  100% {height: 101%};
 }
 .top {
   position: absolute;
@@ -99,12 +100,11 @@ button:hover {
   width: 0;
   height: 2px;
   background: rgb(255,255,255);
-  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgb(235, 255, 125) 100%);
 
-  animation: forth 3s linear;
-  animation-delay: 1.75s;
+  animation: forth .25s ease-in-out;
+  animation-delay: .4s;
 }
 @keyframes forth {
-  25% {width: 100%};
-  75% {width: 0;};
+  100% {width: 101%};
 }
