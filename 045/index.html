@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>045</title>
         <link rel="stylesheet" href="main.css">
+        <script defer type="text/javascript" src="index.js"></script>
     </head>
 
     <header>#045 CSS-100 Days</header>
@@ -13,7 +14,12 @@
     <body>
         <div class="frame">
             <div class="center">
-                <button>Hover me</button>
+                <button id="btn" onmouseover="show()" onmouseout="clearShow()">Hover me</button>
+                
+                <div class="right" style="display:none"></div>
+                <div class="bottom" style="display:none"></div>
+                <div class="left" style="display:none"></div>
+                <div class="top" style="display:none"></div>
             </div>
         </div>
     </body>

@@ -30,4 +30,81 @@
 
 button {
   text-transform: uppercase;
+  background: rgb(92, 164, 234);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border: 1px solid rgba(255, 255, 255, .66);
+  height: 60px;
+  width: 180px;
+  text-align: center;
+
+  transition: 1s ease-out;
+}
+button:hover {
+  background: rgb(75, 145, 215);
+  cursor: pointer;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+  animation: first 2s linear;
+}
+@keyframes first {
+  25% {height: 100%;};
+  75% {height: 0;}
+}
+.bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+
+  animation: second 3s linear;
+  animation-delay: .5s;
+}
+@keyframes second {
+  25% {width: 100%};
+  75% {width: 0};
+}
+.left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+
+  animation: third 2s linear;
+  animation-delay: 1.25s;
+}
+@keyframes third {
+  25% {height: 100%};
+  75% {height: 0};
+}
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(192,192,192,1) 100%);
+
+  animation: forth 3s linear;
+  animation-delay: 1.75s;
+}
+@keyframes forth {
+  25% {width: 100%};
+  75% {width: 0;};
 }
