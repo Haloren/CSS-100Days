@@ -1,9 +1,11 @@
+const container = document.querySelector('.definition-container')
+
 const show = () => { 
-    document.querySelector('.definition-container').classList.remove("hide");
-    document.querySelector('.definition-container').classList.add("show");
+    container.classList.remove("hide");
+    container.classList.add("show");
 }
 
 const hide = () => { 
-    document.querySelector('.definition-container').classList.remove("show"); 
-    document.querySelector('.definition-container').classList.add("hide");
+    container.classList.remove("show"); 
+    container.classList.add("hide");
 }

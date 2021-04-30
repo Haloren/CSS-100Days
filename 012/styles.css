@@ -40,16 +40,19 @@
 }
 .definition-container {
   position: absolute;
-  width: 300px;
-  height: 100px;
+  top: 5px;
+  left: 50px;
+  width: 280px;
+  height: 125px;
   background: rgb(40, 111, 138);
   z-index: 2;
-  opacity: 1;
+  opacity: 0;
 }
-.definition-container::after {
+.definition-container::before {
   content: "";
   position: absolute;
-  left: 50%;
+  left: 125px;
+  top: 124px;
   width: 0;
   border-style: solid;
   border-width: 10px 10px 0 10px;
@@ -83,14 +86,16 @@
   }
 }
 .pronounce {
-  display: inline;
+  display: inline-block;
   color: rgb(40, 111, 138);
   background: #fff;
-  padding: 10px 0;
-  margin: 1rem;
+  padding: 5px 5px 5px 10px;
+  margin: 0;
+  width: 95%;
 }
 .speaker {
-  display: inline;
+  top: 0;
+  left: 100px;
   position: absolute;
   cursor: pointer;
   color: rgb(40, 111, 138);
@@ -104,6 +109,9 @@
 }
 .definition {
   position: relative;
+  margin: 0;
+  padding: 12px;
+  font-size: 1rem;
 }
 .quote {
   position: relative;
