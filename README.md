@@ -3,6 +3,7 @@
 
 # CodePen Links:
 <!-- ###-CSS Challenge -->
+- 012 - https://codepen.io/haloren/pen/zYNVzxg
 - 015 - https://codepen.io/haloren/pen/wvgNVzg
 - 026 - https://codepen.io/haloren/pen/PoWVvgx
 - 032 - https://codepen.io/haloren/pen/mdRQxYO
