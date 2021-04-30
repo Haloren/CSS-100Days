@@ -20,36 +20,108 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-h1{
-  color: yellow;
-}
 .center {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 100%;
-  height: 100%;
+  width: 375px;
+  height: 375px;
 }
-.definition-container {
-  height: 100px;
-  width: 350px;
-}
-
-.quote {
-  quotes: none;
-  z-index: 1;
-  right: 0;
-}
-.quote::before {
+.single-quote {
+  position: absolute;
   content: "„";
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(255, 255, 255, .25);
-  font-size: 250px;
+  font-size: 200px;
+  top: -25%;
+  margin: 0;
+  padding: 0;
+}
+.definition-container {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background: rgb(40, 111, 138);
+  z-index: 2;
+  opacity: 1;
+}
+.definition-container::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: rgb(40, 111, 138) transparent transparent transparent;
+}
+.hide {
+  opacity: 0;
+  animation: slide-out-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-out-top {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+}
+.show {
+	animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.pronounce {
+  display: inline;
+  color: rgb(40, 111, 138);
+  background: #fff;
+  padding: 10px 0;
+  margin: 1rem;
+}
+.speaker {
+  display: inline;
+  position: absolute;
+  cursor: pointer;
+  color: rgb(40, 111, 138);
+  transition: 0.25s ease-out;
+  transform: scaleX(-1);
+  margin: 0;
+  font-size: .9rem;
+}
+.speaker:hover {
+  font-size: 1.1rem;
+}
+.definition {
+  position: relative;
+}
+.quote {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  margin: 25px;
+  padding-top: 15%;
 }
 .author {
   font-style: italic;
+  font-size: 1.25rem;
+  margin: 0 25px 25px 25px;
 }
 .highlight-word {
   background: rgb(40, 111, 138);
+  padding: 0 .25rem .25rem .25rem;
+  z-index: 1;
+}
+.highlight-word:hover {
+  cursor: pointer;
 }
